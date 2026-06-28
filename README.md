@@ -5,7 +5,6 @@
 ![CLIP](https://img.shields.io/badge/OpenAI-CLIP-412991?logo=openai)
 ![FAISS](https://img.shields.io/badge/Meta-FAISS-0467DF?logo=meta)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.35+-FF4B4B?logo=streamlit)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 > An end-to-end AI solution for e-commerce product intelligence — multimodal search,
 > complementary recommendations, duplicate detection, and zero-shot classification —
