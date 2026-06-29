@@ -91,7 +91,7 @@ AI-Ecommerce-Product-Intelligence/
 ├── data/
 │   └── styles.csv              ← Kaggle Fashion Product metadata
 │
-├── images/                     ← Product images (download from Kaggle)
+├── images/                     ← Sample fashion product images included in repository
 │
 ├── notebooks/
 │   └── E_commerce.ipynb        ← Original exploratory notebook
