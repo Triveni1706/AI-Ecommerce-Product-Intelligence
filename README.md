@@ -5,6 +5,7 @@
 ![CLIP](https://img.shields.io/badge/OpenAI-CLIP-412991?logo=openai)
 ![FAISS](https://img.shields.io/badge/Meta-FAISS-0467DF?logo=meta)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.35+-FF4B4B?logo=streamlit)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai-ecommerce-appuct-intelligence-33qtshdwttas9fgaxmfcos.streamlit.app/)
 
 > An end-to-end AI solution for e-commerce product intelligence — multimodal search,
 > complementary recommendations, duplicate detection, and zero-shot classification —
@@ -188,4 +189,6 @@ Open [http://localhost:8501](http://localhost:8501) in your browser. 🎉
 
 ## Live Demo
 
-🚀 Streamlit App: [Click Here](https://your-app-name.streamlit.app)
+🚀 Try the deployed Streamlit application:
+
+https://ai-ecommerce-appuct-intelligence-33qtshdwttas9fgaxmfcos.streamlit.app/
