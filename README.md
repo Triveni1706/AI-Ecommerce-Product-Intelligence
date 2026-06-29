@@ -186,3 +186,6 @@ Open [http://localhost:8501](http://localhost:8501) in your browser. 🎉
 | Classification | Top-1 Accuracy (subCategory) | ~72% zero-shot |
 | FAISS Search Speed | Latency (44K products) | <10 ms |
 
+## Live Demo
+
+🚀 Streamlit App: [Click Here](https://your-app-name.streamlit.app)
