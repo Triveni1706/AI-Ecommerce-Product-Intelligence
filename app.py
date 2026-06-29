@@ -223,7 +223,8 @@ elif "Text Search" in feature:
                 with cols[i % 4]:
                     st.write("Path:", row["image_path"])
                     try:
-                        img = load_image(row["image_path"])
+                        img_path = row["image_path"].replace("\\", "/")
+                        img = load_image(img_path)
                         st.image(img, use_container_width=True)
                     except Exception as e:    
                         st.error(str(e))
@@ -274,7 +275,8 @@ elif "Image Search" in feature:
                 for i, (_, row) in enumerate(results.iterrows()):
                     with cols[i % 4]:
                         try:
-                            img = load_image(row["image_path"])
+                            img_path = row["image_path"].replace("\\", "/")
+                            img = load_image(img_path)
                             st.image(img, use_container_width=True)
                         except Exception:
                             st.image("https://via.placeholder.com/150x200?text=No+Image")
@@ -322,7 +324,8 @@ elif "Recommendations" in feature:
                             for i, (_, row) in enumerate(df_cat.iterrows()):
                                 with cols[i % len(cols)]:
                                     try:
-                                        img = load_image(row["image_path"])
+                                        img_path = row["image_path"].replace("\\", "/")
+                                        img = load_image(img_path)
                                         st.image(img, use_container_width=True)
                                     except Exception:
                                         pass
@@ -336,7 +339,8 @@ elif "Recommendations" in feature:
                         for i, (_, row) in enumerate(results.iterrows()):
                             with cols[i % 4]:
                                 try:
-                                    img = load_image(row["image_path"])
+                                    img_path = row["image_path"].replace("\\", "/")
+                                    img = load_image(img_path)
                                     st.image(img, use_container_width=True)
                                 except Exception:
                                     pass
@@ -379,8 +383,9 @@ elif "Duplicate" in feature:
                         for i, m in enumerate(g["members"][:5]):
                             with cols[i]:
                                 try:
-                                    img = load_image(m["image_path"])
-                                    st.image(img, use_container_width=True)
+                                    img_path = m["image_path"].replace("\\", "/")
+                                    img = load_image(img_path)
+                                    st.image(img, use_container_width=True) 
                                 except Exception:
                                     pass
                                 action = "✅ KEEP" if i == 0 else "❌ REMOVE"
