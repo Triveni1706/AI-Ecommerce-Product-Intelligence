@@ -221,12 +221,12 @@ elif "Text Search" in feature:
             cols = st.columns(4)
             for i, (_, row) in enumerate(results.iterrows()):
                 with cols[i % 4]:
-                    st.write(row["image_path"])
+                    st.write("Path:", row["image_path"])
                     try:
                         img = load_image(row["image_path"])
                         st.image(img, use_container_width=True)
-                    except Exception:
-                        st.image("https://via.placeholder.com/150x200?text=No+Image")
+                    except Exception as e:    
+                        st.error(str(e))
                     name = row.get("productDisplayName", os.path.basename(row["image_path"]))
                     st.caption(f"**{str(name)[:40]}**")
                     score = row.get("score", 0)
