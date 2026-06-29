@@ -222,6 +222,7 @@ elif "Text Search" in feature:
             for i, (_, row) in enumerate(results.iterrows()):
                 with cols[i % 4]:
                     try:
+                        st.write(row["image_path"])
                         img = load_image(row["image_path"])
                         st.image(img, use_container_width=True)
                     except Exception:
